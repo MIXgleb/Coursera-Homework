@@ -1,0 +1,10 @@
+a1, b1, c1 = int(input()), int(input()), int(input())
+a2, b2, c2 = int(input()), int(input()), int(input())
+
+quan1 = (a1 // a2) * (b1 // b2) * (c1 // c2)
+quan2 = (a1 // a2) * (b1 // c2) * (c1 // b2)
+quan3 = (a1 // b2) * (b1 // a2) * (c1 // c2)
+quan4 = (a1 // b2) * (b1 // c2) * (c1 // a2)
+quan5 = (a1 // c2) * (b1 // b2) * (c1 // a2)
+quan6 = (a1 // c2) * (b1 // a2) * (c1 // b2)
+print(max(quan6, quan5, quan4, quan3, quan2, quan1))
